@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Box Note to Markdown",
+  "version": "1.0",
+  "description": "Converts Box Note to Markdown.",
+  "permissions": [
+    "activeTab",
+    "clipboardWrite",
+    "downloads",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.box.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.box.com/*"],
+      "js": ["content.js"],
+      "all_frames": true
+    }
+  ]
+}

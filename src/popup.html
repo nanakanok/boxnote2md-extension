@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Note to Markdown</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Box Note to Markdown</h1>
+    <div class="controls">
+      <button id="convertBtn">Convert to Markdown</button>
+    </div>
+    <div class="preview-container">
+      <label for="markdownOutput">Preview:</label>
+      <textarea id="markdownOutput" readonly placeholder="Markdown content will appear here..."></textarea>
+    </div>
+    <div class="actions">
+      <button id="copyBtn" disabled>Copy to Clipboard</button>
+      <button id="saveBtn" disabled>Save as .md</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
